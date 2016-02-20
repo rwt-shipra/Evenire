@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="evenireApp" ng-controller="evenireController as evenire">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Event Planner</title>
+    <title >Evenire Planner</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -86,18 +86,7 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Evenire Planner</h2>
-                <p>Evenire Planner is an online event planning company offering online event management Service. We offer an affordable  planning  to get away from the mistakes, headaches and mess of paper registration process and get accustomed to a very functional online event planning tool. We are a reputable event planner company that aid in making every event or show successful by having more number of participants. </p>
-
-              <p>  <a href="http://startbootstrap.com/template-overviews/grayscale/">Build you own event, manage and host with Evenire Planner  !</a></p>
-            <p>Now you don't worry we manage everything for You </p><p><a href="http://gratisography.com/">Some Coverage along with Some Videos.</a></p>
-                
-            </div>
-        </div>
-    </section>
+    <about-us> </about-us>
 
     <!-- Download Section -->
     <section id="download" class="content-section text-center">
@@ -113,27 +102,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Evenire Planner</h2>
-                <p>Feel free to email us </p>
-                <p><a href="mailto:rawatshipra15@gmail.com">rawatshipra15@gmail.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/rwt_shipra" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/rwt-shipra" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/u/0/112020682656512794492" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+     <contact-us> </contact-us>
 
     <!-- Map Section -->
     <div id="map"></div>
@@ -141,7 +110,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Evenire-Planner</p>
+            <p>{{evenire.copy_right}}</p>
         </div>
     </footer>
 
@@ -159,7 +128,8 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
-
+    <script src="js/angular.min.js"></script>
+    <script src="js/controller.js"></script>
 </body>
 
 </html>

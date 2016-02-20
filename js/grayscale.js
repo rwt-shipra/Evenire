@@ -34,12 +34,13 @@ $('.navbar-collapse ul li a').click(function() {
   }
 });
 
-// Google Maps Scripts
+var lat=30.735381;
+var lon=76.744555;
 var map = null;
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(30.735381,76.744555));
+    map.setCenter(new google.maps.LatLng(lat,lon));
 });
 
 function init() {
@@ -50,7 +51,7 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(30.735381,76.744555), // New York
+        center: new google.maps.LatLng(lat,lon), // New York
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -177,8 +178,8 @@ function init() {
     map = new google.maps.Map(mapElement, mapOptions);
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(30.735381, 76.744555);
+    var image = 'images/map-marker.png';
+    var myLatLng = new google.maps.LatLng(lat, lon);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
