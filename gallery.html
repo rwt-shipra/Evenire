@@ -4,20 +4,19 @@
 		<title>Evenire Gallery</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
 	</head>
-	<body ng-controller="evenireGallery as gallery" class="is-loading-0 is-loading-1 is-loading-2">
-
+	<body  ng-controller="evenireGallery as gallery" class="is-loading-0 is-loading-1 is-loading-2">
 		<!-- Main -->
 			<div id="main">
 				<!-- Header -->
 					<header id="header">
 						<h1>Gallery</h1>
-						<p>Incredible Memories of Evenire's  </p>
+						<p>Incredible Memories of Evenire's</p>
 						<ul class="icons">
 							<li><a href="https://twitter.com/rwt_shipra" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="https://www.instagram.com/rawat.shipra/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
@@ -92,20 +91,19 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<ul class="copyright">
-						<li>Copyright &copy; Evenire-Planner </li>
+						<ul class="copyright" ng-controller="evenireController as controller">
+						<li>{{copy_right}}</li>
 						</ul>
 					</footer>
 
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/skel.min.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="js/main.js"></script>
 			<script src="js/angular.min.js"></script>
     		<script src="js/controller.js"></script>
-
 	</body>
 </html>
